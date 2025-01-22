@@ -1,0 +1,15 @@
+node2:start(5).
+
+node2:start(10, <0.87.0>).
+
+<0.87.0> ! probe.
+
+10> test:add(11, "hello", <0.87.0>).
+
+11> test:lookup(11, <0.87.0>).
+
+test:start(node2).
+
+test:start(node2, <0.87.0>).
+
+test:start_test_processes(4, 1000, <0.87.0>).
